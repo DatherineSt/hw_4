@@ -6,18 +6,18 @@
 // 6, 1, 33 -> [6, 1, 33]
 
 
-int [] getRange( int length)
+int [] GetRange( int Length)
 {
-    int [] array = new int [length];
+    int [] array = new int [Length];
     Random rd = new Random();
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = rd.Next(0, 10);
+        array[i] = rd.Next(0, 50);
     }
     return array;
 }
 
-void printArray( int [] array)
+void PrintArray( int [] array)
 {
     Console.Write("[");
     for (int i = 0; i < array.Length; i++)
@@ -30,7 +30,5 @@ void printArray( int [] array)
     }
     Console.WriteLine("]");
 }
-
-int [] array = getRange(8);
-printArray(array);
-
+int [] array = GetRange(8);
+PrintArray(array);
